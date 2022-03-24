@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+}
+
+:root {
+  --main-accent: #060b35;
+  --secondary-color: #616070;
+  --white: #fff;
+  --blue-accent: #00acdc;
+  --gray-elements: #e5e5e5;
+  --yellow-stars-color: #ffde6a;
+  --card-padding: 16px;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  display: flex;
+}
+
+.card {
+  display: flexbox;
+  max-width: calc(200px - (var(--card-padding) * 2));
+  max-height: 400px;
+  padding: var(--card-padding);
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--gray-elements);
+  border-radius: 5px;
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image-iMac {
+  display: flex;
+
+  background-image: url(images/imac.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 160px;
+
+  margin: 16px 0 40px;
+  left: calc(50% - (160px / 2));
+}
+
+.card__title {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding-bottom: 4px;
+
+  align-items: center;
+  color: var(--main-accent);
+}
+
+.card__code {
+  display: flex;
+  margin: 0;
+  padding-bottom: 16px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.card__rate {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.card__star {
+  display: flex;
+}
+
+.stars-star {
+  background-image: url(images/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.stars-4 :nth-child(-n+4) {
+  background-image: url(images/star-active.svg);
+}
+
+.card__price-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 16px;
+
+  list-style: none;
+}
+
+.card__price-title {
+  display: flex;
+  font-size: 12px;
+}
+
+.card__price-amount {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__buy-button {
+  display: flexbox;
+  border: 1px solid var(--blue-accent);
+  border-radius: 5px;
+  background-color: var(--blue-accent);
+}
+
+.card__buy-button-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  height: 40px;
+}
+
+.card__buy-button:hover {
+  background-color: var(--white);
+}
+
+.card__buy-button--link:hover {
+  color: var(--blue-accent);
+}
