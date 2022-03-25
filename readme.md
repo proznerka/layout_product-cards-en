@@ -35,3 +35,5 @@ other - number of selected stars should change correctly.
 
 ---
 ![screenshot](./references/card-example.png)
+
+--just writing here something to be able to add for pull request--
