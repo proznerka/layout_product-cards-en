@@ -8,16 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <div class="card"
-      data-qa="card"
-    >
+  <body class="page">
+    <div class="card page__card" data-qa="card">
 
       <div class="card__image">
         <img
-        class="card__image-iMac"
-        src="images/imac.jpeg"
-        alt="iMac"
+          class="card__image-iMac"
+          src="images/imac.jpeg"
+          alt="iMac"
         >
       </div>
 
@@ -40,17 +38,16 @@
         <p class="card__review">Reviews: 5</p>
       </div>
 
-      <div>
-        <ul class="card__price-list">
-          <li class="card__price-title">Price:</li>
-          <li class="card__price-amount">$2,199</li>
-        </ul>
+      <div class="card__price-list">
+        <p class="card__price-title">Price:</p>
+        <p class="card__price-amount">$2,199</p>
       </div>
 
       <div class="card__buy-button">
-        <a href="#"
-        class="card__buy-button-link"
-        data-qa="hover"
+        <a
+          href="#"
+          class="card__buy-button-link"
+          data-qa="hover"
         >
         Buy
         </a>

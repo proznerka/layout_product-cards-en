@@ -6,6 +6,7 @@
   --gray-elements: #e5e5e5;
   --yellow-stars-color: #ffde6a;
   --card-padding: 16px;
+  --border: 1px;
 }
 
 html {
@@ -13,6 +14,7 @@ html {
   font-size: 12px;
   font-weight: 500;
   color: var(--main-accent);
+  box-sizing: border-box;
 }
 
 body,
@@ -22,13 +24,11 @@ p {
 }
 
 .card {
-  max-width: calc(198px - (var(--card-padding) * 2));
+  max-width: calc(200px - (var(--border) * 2) - (var(--card-padding) * 2));
   max-height: 400px;
   padding: var(--card-padding);
-  border: 1px solid #f3f3f3;
+  border: var(--border) solid #f3f3f3;
   border-radius: 5px;
-
-  background-color: var(--white);
 
   font-weight: 500;
 }
@@ -40,28 +40,18 @@ p {
 }
 
 .card__image-iMac {
-  display: flex;
-
   margin: 16px 0 40px;
   width: 160px;
   height: 134px;
-
-  background-image: url(images/imac.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card__title {
-  display: flex;
-  align-items: center;
-
   margin-bottom: 4px;
   line-height: 18px;
   color: var(--main-accent);
 }
 
 .card__code {
-  display: flex;
   margin-bottom: 16px;
   font-size: 10px;
   font-weight: 400;
@@ -99,13 +89,11 @@ p {
 }
 
 .card__review {
-  display: flex;
   font-size: 10px;
   font-weight: 400;
 }
 
 .card__price-list {
-  position: relative;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -116,16 +104,12 @@ p {
 }
 
 .card__price-title {
-  display: flex;
-  text-align: center;
   font-size: 12px;
   font-weight: 400;
   color: var(--secondary-color);
 }
 
 .card__price-amount {
-  display: flex;
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
 }
