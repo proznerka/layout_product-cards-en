@@ -15,23 +15,13 @@ html {
   color: var(--main-accent);
 }
 
-body {
-  margin: 0;
-}
-
-div {
-  margin: 0;
-}
-
+body,
+div,
 p {
-  display: flex;
   margin: 0;
 }
 
 .card {
-  justify-content: center;
-  align-items: center;
-
   max-width: calc(198px - (var(--card-padding) * 2));
   max-height: 400px;
   padding: var(--card-padding);
@@ -39,7 +29,7 @@ p {
   border-radius: 5px;
 
   background-color: var(--white);
-  
+
   font-weight: 500;
 }
 
@@ -62,7 +52,6 @@ p {
 }
 
 .card__title {
-  position: relative;
   display: flex;
   align-items: center;
 
@@ -148,10 +137,9 @@ p {
 }
 
 .card__buy-button-link {
-  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 
   height: 38px;
 
