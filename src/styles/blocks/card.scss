@@ -17,13 +17,14 @@
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 18px;
-    color: #{$main-accent};
     font-weight: 500;
+    color: #{$main-accent};
   }
 
   &__code {
     margin-bottom: 16px;
     font-size: 10px;
+    line-height: 14px;
     font-weight: 400;
     color: #{$secondary-color};
   }
@@ -31,7 +32,7 @@
   &__rate {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     margin-bottom: 24px;
   }
@@ -42,17 +43,15 @@
   }
 
   &__price-list {
-    justify-content: space-between;
-    align-items: center;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin-bottom: 16px;
-
-    list-style: none;
   }
 
   &__price-title {
     font-size: 12px;
+    line-height: 18px;
     font-weight: 400;
     color: #{$secondary-color};
   }
