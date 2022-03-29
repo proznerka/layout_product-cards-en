@@ -1,0 +1,12 @@
+@import "./styles/utils/variables.scss";
+@import "./styles/utils/reset.scss";
+@import "./styles/blocks/card.scss";
+@import "./styles/blocks/stars.scss";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #{$main-accent};
+  box-sizing: border-box;
+}
